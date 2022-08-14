@@ -41,13 +41,13 @@ const object3 = { number: -7 }
 // use expect method, that will call on the divisibleBy() function, and use the matcher .toEqual()
 
 
-// describe("divisibleBy", () => {
-//     it("returns a certain string depending on the argument the function takes in", () => {
-//         expect(divisibleBy(object1)).toEqual("15 is divisible by three");
-//         expect(divisibleBy(object2)).toEqual("0 is divisible by three");
-//         expect(divisibleBy(object3)).toEqual("-7 is not divisible by three");
-//     });
-//   });
+describe("divisibleBy", () => {
+    it("returns a certain string depending on the argument the function takes in", () => {
+        expect(divisibleBy(object1)).toEqual("15 is divisible by three");
+        expect(divisibleBy(object2)).toEqual("0 is divisible by three");
+        expect(divisibleBy(object3)).toEqual("-7 is not divisible by three");
+    });
+  });
 
 
 //  After running this test, I received this failed: ReferenceError: divisbleBy is not defined. This means it's a good fail because it says our test is written correctly, but failed because when I tried to invoke my function divisibleBy(), it couldn't find it. 
@@ -97,12 +97,12 @@ const randomNouns2 = ["temperature", "database", "chopsticks", "mango", "deducti
 // add test/it method within the describe block that says returns a new array with all the words from the orginial array capitalized 
 // use expect method, that will call on the allCaps() function, and use the matcher .toEqual()
 
-// describe("allCaps", () => {
-//     it("returns a new array with all the words from the orginial array capitalized", () => {
-//         expect(allCaps(randomNouns1)).toEqual(["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"])
-//         expect(allCaps(randomNouns2)).toEqual(["Temperature", "Database", "Chopsticks", "Mango", "Deduction"])
-//     })
-// })
+describe("allCaps", () => {
+    it("returns a new array with all the words from the orginial array capitalized", () => {
+        expect(allCaps(randomNouns1)).toEqual(["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"])
+        expect(allCaps(randomNouns2)).toEqual(["Temperature", "Database", "Chopsticks", "Mango", "Deduction"])
+    })
+})
 
 // After running my jest test, I was shown a failed test:    ReferenceError: allCaps is not defined. This is a good fail because it means that our code is correct, however, the computer is looking for the function allCaps and could not find it. We will be defining allCaps within the next portion of this question. 
 
@@ -138,13 +138,13 @@ const vowelTester3 = "challenges"
 // Within the describe block, add a test/it method that says: it will take a string and log the index of the first vowel 
 // Nested inside the test block, we will have an expect method calling to the logValue function, followed by the .toEqual() matcher that it will return: 1, 0, 2 
 
-// describe("logValue", () => {
-//     it("returns the index of the first vowel within the string", () => {
-//         expect(logValue(vowelTester1)).toEqual(1)
-//         expect(logValue(vowelTester2)).toEqual(0)
-//         expect(logValue(vowelTester3)).toEqual(2)
-//     })
-// })
+describe("logValue", () => {
+    it("returns the index of the first vowel within the string", () => {
+        expect(logValue(vowelTester1)).toEqual(1)
+        expect(logValue(vowelTester2)).toEqual(0)
+        expect(logValue(vowelTester3)).toEqual(2)
+    })
+})
 
 // Once I ran the test, I ran into 1 failure stating: ReferenceError: logValue is not defined. This is a good fail because this means my code is correct, however when the computer is looking for the function logValue, it cannot be found since I have not yet created it. 
 

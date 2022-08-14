@@ -34,7 +34,7 @@ Researched answer: My answer above is correct. Both built-in methods are utilize
 
 Your answer: DOM stands for Document Object Model. The DOM would be the visible/visual representation of the code you have written. For example, when you look at a website on your phone or computer, you are looking seeing all the code that you have written display what you have told the computer you want it to show to a user. 
 
-Researched answer: My answer is correct. DOM allows developers to see the interface of the website and this is where you can review the content, seeing the style and structure. 
+Researched answer: My answer is correct. DOM allows developers to see the interface of the website and this is where you can review the content like the paragraphs someone has written. You can see the style which would include the colors of the background, the font used, or even if there are photos. Lastly, this is where you can see the structure as well. This means the amount of space one column can take up or how the page is divide to include different items within the application. 
 
 5. What is React? Why would you use it?
 
